@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routeing</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+      />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""></script>
+      <!-- <link data-require="leaflet@0.7.7" data-semver="0.7.7" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.0/leaflet.css" /> -->
+        <!-- <script data-require="leaflet@0.7.7" data-semver="0.7.7" src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.0/leaflet.js"></script> -->
+        <!-- <script src="https://npmcdn.com/leaflet-geometryutil"></script> -->
+
+  </head>
+
+  <body>
+
+
+    
+    <div class="autocomplete-container" id="autocomplete-container">
+      <button class="nearest" id="nearest" >Nearest</button>
+    </div>
+    <!-- <img id="myImageId" src="" width="500" height="500" > -->
+
+    <div class="container" style="height: 100vh;">
+
+      <div id="map" style="height: 100%"></div>
+      
+      <div id="panel">
+        <div id="heading">Pay Parking System</div>
+        <div id="nameOf">Name: Dev Patel</div>
+        <div id="id">ID: 01</div>
+        <button id="para" class="button">Navigate</button>
+        
+        <a href="register.html">
+          <button id="NewButton" class="button">New User</button>
+        </a>
+        <button id="para2" class="para2">START</button>
+        
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+
+<!-- FinD Nearest Parking -->

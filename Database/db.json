@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "61",
+      "name": "Shivam Motors",
+      "mail": "shivammotors@gmail.com",
+      "xcoo": "23.23472493830437",
+      "ycoo": "72.64210893830437",
+      "password": "123"
+    },
+    {
+      "id": "284",
+      "name": "Rajni Motors",
+      "mail": "rajni@gmail.com",
+      "xcoo": "23.23872493830437",
+      "ycoo": "72.64310893830437",
+      "password": "123"
+    },
+    {
+      "id": "37",
+      "name": "Radhe Motors",
+      "mail": "radhe@gmail.com",
+      "xcoo": "23.23672493830437",
+      "ycoo": "72.64910893830437",
+      "password": "123"
+    },
+    {
+      "id": "748",
+      "name": "Bhatoo Motors",
+      "mail": "bhatto@gmail.com",
+      "xcoo": "23.23972493830437",
+      "ycoo": "72.65110893830437",
+      "password": "123"
+    },
+    {
+      "id": "958",
+      "name": "Dhamo Motors",
+      "mail": "dhamo@gmail.com",
+      "xcoo": "23.24272493830437",
+      "ycoo": "72.64010893830437",
+      "password": "123"
+    },
+    {
+      "id": "1",
+      "name": "Dev",
+      "mail": "devpatelm8318@gmail.com",
+      "password": "aaa",
+      "xcoo": "23.22267993830437",
+      "ycoo": "72.63628338456881"
+    }
+  ]
+}
