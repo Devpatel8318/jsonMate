@@ -41,12 +41,69 @@
       "password": "123"
     },
     {
-      "id": "1",
-      "name": "Dev",
+      "id": "9",
+      "name": "w",
       "mail": "devpatelm8318@gmail.com",
-      "password": "aaa",
-      "xcoo": "23.22267993830437",
-      "ycoo": "72.63628338456881"
+      "password": "hhvhvhhj",
+      "xcoo": "23.22206207035255",
+      "ycoo": "72.63902797256266"
+    },
+    {
+      "id": "3",
+      "name": "s",
+      "mail": "devpatelm8318@gmail.com",
+      "password": "klklklkk",
+      "xcoo": "23.2211155430761",
+      "ycoo": "72.64125898972623"
+    },
+    {
+      "id": "6666",
+      "name": "s",
+      "mail": "devpatelm8318@gmail.com",
+      "password": "cacaccascasc",
+      "xcoo": "23.222614208165584",
+      "ycoo": "72.6404009593828"
+    },
+    {
+      "id": "55555",
+      "name": "dev",
+      "mail": "devpatelm8318@gmail.com",
+      "password": "m",
+      "xcoo": "23.22363960090439",
+      "ycoo": "72.63834168655859"
+    },
+    {
+      "id": "8",
+      "name": "bvnm",
+      "mail": "sdadadd@gmail.com",
+      "password": "jj",
+      "xcoo": "23.227188976503154",
+      "ycoo": "72.63465201781118"
+    },
+    {
+      "id": "232",
+      "name": "yashhh",
+      "mail": "sdadadd@gmail.com",
+      "password": "aDDD",
+      "xcoo": "23.22190431627236",
+      "ycoo": "72.6361966107"
+    },
+    {
+      "id": "766",
+      "name": "s",
+      "mail": "devpatelm8318@gmail.com",
+      "password": "b",
+      "xcoo": "23.22206207035255",
+      "ycoo": "72.64151626055857"
+    }
+  ],
+  "idd": [],
+  "stocks": [
+    {
+      "devpatelm8318@gmail.com": 3
+    },
+    {
+      "dhamo@gmai.com": 4
     }
   ]
 }

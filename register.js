@@ -116,8 +116,52 @@ formEl.addEventListener("submit", (event) => {
         },
         body: JSON.stringify(data),
     });
-    openNewURLInTheSameWindow("http://127.0.0.1:5500/Intenship/jsonMate/login.html");
+    
+
+    fetch("http://localhost:3000/stocks")
+        .then((res) => res.json())
+        .then((jsonn) => {
+            jsonn.map((dataJson) => {
+
+                console.log(dataJson);
+                alert(dataJson);
+
+            });
+        });
+
+        var xyz = {
+            "dev":"dev"
+        }
+    fetch('http://localhost:3000/stocks', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(xyz),
+    });
+
+    // fetch('http://localhost:3000/stocks', {
+    //     method: 'POST',
+    //     body: JSON.stringify(data)
+    // });
 });
+
+    // fetch("http://localhost:3000/stock", {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(data),
+    // });
+
+
+
+
+
+
+
+    // openNewURLInTheSameWindow("http://127.0.0.1:5500/Intenship/jsonMate/login.html");
+// });
 
 
 function fireClickEvent(element) {
