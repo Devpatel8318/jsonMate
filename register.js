@@ -1,9 +1,3 @@
-
-
-
-
-
-
 var map = L.map("map").setView([23.234724, 72.642108], 14);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
@@ -28,7 +22,6 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // map.on('click', remover);
 let x;
 let y;
-
 function onMapClick(e) {
     // user clicked on a map
     fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${e.latlng.lat}&lon=${e.latlng.lng}&apiKey=bed8b866464f4b369ab39767ba49258d`)
@@ -108,60 +101,25 @@ formEl.addEventListener("submit", (event) => {
     delete data["otp"];
     data["xcoo"] = x.toString();
     data["ycoo"] = y.toString();
-
+    var extra = {
+    }
     fetch("http://localhost:3000/items", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
-    });
-    
-
-    fetch("http://localhost:3000/stocks")
-        .then((res) => res.json())
-        .then((jsonn) => {
-            jsonn.map((dataJson) => {
-
-                console.log(dataJson);
-                alert(dataJson);
-
-            });
-        });
-
-        var xyz = {
-            "dev":"dev"
-        }
-    fetch('http://localhost:3000/stocks', {
-        method: 'POST',
+    }).then(fetch("http://localhost:3000/stock", {
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(xyz),
-    });
-
-    // fetch('http://localhost:3000/stocks', {
-    //     method: 'POST',
-    //     body: JSON.stringify(data)
-    // });
-});
-
-    // fetch("http://localhost:3000/stock", {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(data),
-    // });
-
-
-
-
-
-
-
+        body: JSON.stringify({
+            [data.mail]: 5
+        }),
+    }));
     // openNewURLInTheSameWindow("http://127.0.0.1:5500/Intenship/jsonMate/login.html");
-// });
+});
 
 
 function fireClickEvent(element) {
@@ -170,7 +128,6 @@ function fireClickEvent(element) {
         bubbles: true,
         cancelable: true
     });
-
     element.dispatchEvent(evt);
 }
 
