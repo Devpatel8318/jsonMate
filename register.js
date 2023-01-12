@@ -22,6 +22,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // map.on('click', remover);
 let x;
 let y;
+
 function onMapClick(e) {
     // user clicked on a map
     fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${e.latlng.lat}&lon=${e.latlng.lng}&apiKey=bed8b866464f4b369ab39767ba49258d`)
@@ -83,9 +84,9 @@ function otpChecker() {
     }
     else {
         alert("Wrong Otp, Try Again");
-        document.getElementById("sub").style.display = "";
-        console.log("Right OTP");
-        document.getElementById("otpCheck").style.display = "none";
+        // document.getElementById("sub").style.display = "";
+        // console.log("Right OTP");
+        // document.getElementById("otpCheck").style.display = "none";
     }
 }
 
@@ -115,10 +116,11 @@ formEl.addEventListener("submit", (event) => {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            [data.mail]: 5
+            "available": 0,
+            "id": Number(data.id)
         }),
     }));
-    // openNewURLInTheSameWindow("http://127.0.0.1:5500/Intenship/jsonMate/login.html");
+    openNewURLInTheSameWindow("http://127.0.0.1:5500/Intenship/jsonMate/login.html");
 });
 
 
@@ -131,9 +133,7 @@ function fireClickEvent(element) {
     element.dispatchEvent(evt);
 }
 
-// this function will setup a virtual anchor element
-// and fire click handler to open new URL in the same room
-// it works better than location.href=something or location.reload()
+
 function openNewURLInTheSameWindow(targetURL) {
     var a = document.createElement('a');
     a.href = targetURL;

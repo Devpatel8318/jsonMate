@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
 </head>
+
 <body>
-    
+    <div>
+        <h3>Name:  <span  class="name" id="name" ></span> </h3>
+        <h3>id: <span class="id" id="id"></span></h3>
+        <h3>Slots: <span class="slots" id="slots"></span></h3>
+
+
+    </div>
+    <script>
+        document.getElementById("name").innerHTML;
+        var id;
+        fetch("http://localhost:3000/idd/1")
+            .then(response => response.json())
+            .then(result => {
+                var id = Object.values(result)[0];
+                // console.log(id);
+
+
+                fetch(`http://localhost:3000/items/${id}`)
+                    .then((res) => res.json())
+                    .then((data) => {
+                        // console.log(data);
+                        document.getElementById("name").innerHTML=data.name;
+                        document.getElementById("id").innerHTML=data.id;
+                        var slot;
+                        fetch(`http://localhost:3000/stock/${id}`)
+                        .then((res)=>res.json())
+                        .then((data2)=>{
+                            document.getElementById("slots").innerHTML=data2.available;
+                        });
+                        
+
+                    });
+
+
+
+
+            });
+
+
+
+
+
+
+
+    </script>
 </body>
+
 </html>

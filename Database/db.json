@@ -39,29 +39,82 @@
       "xcoo": "23.24272493830437",
       "ycoo": "72.64010893830437",
       "password": "123"
+    },
+    {
+      "id": "1111",
+      "name": "qqqq",
+      "mail": "devpatelm8318@gmail.com",
+      "password": "aaaa",
+      "xcoo": "23.22087891020874",
+      "ycoo": "72.63988630434586"
+    },
+    {
+      "id": "909",
+      "name": "vraj",
+      "mail": "vraj@gmail.com",
+      "password": "123",
+      "xcoo": "23.22206207035255",
+      "ycoo": "72.64662260879051"
+    },
+    {
+      "id": "10101",
+      "name": "dhruvi",
+      "mail": "dhruvipanchal1210@gmail.com",
+      "password": "dhruvi",
+      "xcoo": "23.222555050651955",
+      "ycoo": "72.67097320112396"
+    },
+    {
+      "id": "5656",
+      "name": "anchal",
+      "mail": "anchalpatel2562003@gmail.com",
+      "password": "anchal",
+      "xcoo": "23.173429253551753",
+      "ycoo": "72.81616135891525"
     }
   ],
-  "idd": [],
+  "idd": [
+    {
+      "logged": "5656",
+      "id": 1
+    }
+  ],
   "stock": [
     {
-      "shivammotors@gmail.com":1,
-      "id":61
+      "available": 1,
+      "id": 61
     },
     {
-      "rajni@gmail.com":2,
-      "id":284
+      "available": 2,
+      "id": 284
     },
     {
-      "radhe@gmail.com":3,
-      "id":37
+      "available": 3,
+      "id": 37
     },
     {
-      "bhatto@gmail.com":4,
-      "id":748
+      "available": 4,
+      "id": 748
     },
     {
-      "dhamo@gmail.com":5,
-      "id":958
+      "available": 980,
+      "id": 1111
+    },
+    {
+      "available": 98,
+      "id": 748
+    },
+    {
+      "available": 0,
+      "id": 909
+    },
+    {
+      "available": 0,
+      "id": 10101
+    },
+    {
+      "available": 0,
+      "id": 5656
     }
   ]
 }

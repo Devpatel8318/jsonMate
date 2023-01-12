@@ -76,13 +76,20 @@ a:active {
 
 #para {
     position: absolute;
-    bottom: 0px;
+    bottom: 40px;
 }
 
 #NewButton {
     position: absolute;
-    bottom: 0px;
+    bottom: 40px;
     right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#para2{
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
 }
 
 .button:hover {

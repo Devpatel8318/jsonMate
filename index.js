@@ -19,6 +19,9 @@ var y;
 fetch("http://localhost:3000/items")
     .then((res) => res.json())
     .then((json) => {
+
+
+
         json.map((data) => {
             var markers = L.marker([data.xcoo, data.ycoo])
                 .addTo(map)
